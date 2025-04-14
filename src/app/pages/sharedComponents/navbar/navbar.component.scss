@@ -1,0 +1,35 @@
+.navbar {
+  background-color: #38811973;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 1rem 0.5rem;
+  border-radius: 20px;
+
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    .navbar-item {
+      margin-right: 2rem;
+      position: relative;
+
+      a,
+      .dropdown-toggle {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 0.2s ease;
+      }
+
+      a:hover,
+      .dropdown-toggle:hover {
+        color: #06330e;
+      }
+    }
+  }
+}
