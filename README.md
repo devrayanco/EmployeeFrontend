@@ -1,59 +1,62 @@
-# Front2
+# Employee Manager — Angular + Node + Firebase
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+Este projeto é uma aplicação FullStack desenvolvida com **Angular (frontend)**, **Node.js/Express (backend)**, **Firebase Authentication** e uma **API** para arquitetura BFF, para gerenciamento de funcionários.
 
-## Development server
+---
 
-To start a local development server, run:
+## Funcionalidades
 
-```bash
-ng serve
-```
+- Registro e login de usuários
+- Tela para listar funcionários
+- Cadastro, edição e exclusão de funcionários
+- Autenticação com proteção de rotas (guard)
+- Backend com Express que valida usuários e gerencia dados
+- Consumo de Api em arquitetura bff
+- Comunicação com Firebase para autenticação e emissão de tokens
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Tecnologias Utilizadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Frontend**: Angular 19
+- **Backend**: Node.js + Express
+- **Autenticação**: Firebase Authentication
+- **Banco de dados**: NoSQL Firebase FireStore
+- **Outros**: RxJS, Bootstrap, JWT
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Como rodar o projeto
 
-```bash
-ng generate --help
-```
+- Após fazer o clone do projeto pelo gitHub é necessário executar o comando npm install nas três pastas de projetos que são clonadas, assim serão intaladas as dependências pertinents a cada projeto
 
-## Building
+## como executar localmente
 
-To build the project run:
 
-```bash
-ng build
-```
+### Backend
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+1 - é necessário entrar na pasta backend e executar o start do projeto com os seguintes comandos
 
-## Running unit tests
+    cd backend
+    npm run dev
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-```bash
-ng test
-```
+2 - é necessário entrar na pasta bffApi e também executar o start do projeto com os seguintes comandos
 
-## Running end-to-end tests
+    cd bffApi
+    npm run dev
 
-For end-to-end (e2e) testing, run:
 
-```bash
-ng e2e
-```
+### Frontend (Angular)
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+1. Vamos executar o projeto `frontend`, execute os seguintes comandos
 
-## Additional Resources
+   cd frontend
+   ng server -o
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+assim o projeto frontend vai estar rodando na porta 4200, ao executar comando acima já será redirecionado para a tela de login.
+
+
+
+
+
